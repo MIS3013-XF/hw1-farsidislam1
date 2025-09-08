@@ -27,13 +27,14 @@ namespace HW1a_Sales
             Console.WriteLine("What is the price?");
             double myPrice = Convert.ToDouble(Console.ReadLine());
 
+            const double SALES_TAX_RATE = 0.085;
             double AmtXPrice = myAmount * myPrice;
-            double salesTax = AmtXPrice * 0.085;
+            double salesTax = AmtXPrice * SALES_TAX_RATE;
             double total = AmtXPrice + salesTax;
 
-            Console.WriteLine($"Your subtotal is {AmtXPrice}");
-            Console.WriteLine($"Your sales tax is {salesTax}");
-            Console.WriteLine($"Your final total is {total}");
+            Console.WriteLine($"Your subtotal is ${AmtXPrice}");
+            Console.WriteLine($"Your sales tax is ${salesTax}");
+            Console.WriteLine($"Your final total is ${total}");
         }
     }
 }
