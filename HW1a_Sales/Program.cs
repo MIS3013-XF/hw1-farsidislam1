@@ -32,9 +32,9 @@ namespace HW1a_Sales
             double salesTax = AmtXPrice * SALES_TAX_RATE;
             double total = AmtXPrice + salesTax;
 
-            Console.WriteLine($"Your subtotal is ${AmtXPrice}");
-            Console.WriteLine($"Your sales tax is ${salesTax}");
-            Console.WriteLine($"Your final total is ${total}");
+            Console.WriteLine($"Your subtotal is {AmtXPrice:C}");
+            Console.WriteLine($"Your sales tax is {salesTax:C}");
+            Console.WriteLine($"Your final total is {total:C}");
         }
     }
 }
