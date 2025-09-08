@@ -15,7 +15,7 @@ namespace HW1a_Sales
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hellooooo");
+            Console.WriteLine("Helloooooooo");
         }
     }
 }
